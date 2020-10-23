@@ -5,8 +5,10 @@ Version: 0.0.1
 Author@R: c( person("Hojjat", "Kaveh", email = "hojjatks@gmail.com", role = c("cre","aut")))
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: This package shows the time-series of Covid-19 in a global map.
-License:GPL-3
+License: GPL-3
 Encoding: UTF-8
 LazyData: true
-Depends:R (>= 3.5.0)
+Depends: R (>= 3.5.0)
 Imports: dplyr (>= 1.0.0)
+URL: https://github.com/hojjatks/Covid19Map
+BugReports: https://github.com/hojjatks/Covid19Map/issues
