@@ -2,7 +2,7 @@ Package: Covid19Map
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.0.1
-Authors: c( person("Hojjat", "Kaveh", email = "hojjatks@gmail.com", role = c("cre","aut")))
+Author: c( person("Hojjat", "Kaveh", email = "hojjatks@gmail.com", role = c("cre","aut")))
 Maintainer: The package maintainer <yourself@somewhere.net>
 Description: This package shows the time-series of Covid-19 in a global map.
 License: GPL-3
