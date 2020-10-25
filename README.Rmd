@@ -1,0 +1,63 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# Covid19Map
+
+<!-- badges: start -->
+[![CRAN status](https://www.r-pkg.org/badges/version/Covid19Map)](https://CRAN.R-project.org/package=Covid19Map)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+<!-- badges: end -->
+
+The goal of Covid19Map is to download the Covid-19 time-series from Johns Hopkins University Github page. There are three functions in this package that can be used for getting a clean data, plotting a World-map showing the number of cases and death in each day and a final figure that shows time-series for any individual country during a user defined interval.
+
+## Installation
+
+You can install the released version of Covid19Map from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("Covid19Map")
+```
+
+And the development version from [GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("hojjatks/Covid19Map")
+```
+## Example
+
+This is a basic example which shows you how to solve a common problem:
+
+```{r example}
+library(Covid19Map)
+## basic example code
+library(RCurl)
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+library(stringr)
+library(lubridate)
+DataFrame<-GetFullTimeseries()
+```
+
+
+
+
+```{r pressure}
+Covid19Map::PlotCountryTimeseries(FromDate="2020.2.1",
+           ToDate="2020.10.20",
+           Country="Iran",TypeP="New Death")
+```
+

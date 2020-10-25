@@ -1,0 +1,38 @@
+---
+title: "My Vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{PlotCountryTimeseries}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+  
+)
+library(RCurl)
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+library(stringr)
+library(lubridate)
+```
+
+```{r message=FALSE}
+
+Covid19Map::PlotWorldMap(DayP=20,MonthP=10,YearP=2020,TypeP="New Death")
+
+```
+
+
+
+
+
+```{r message=FALSE}
+Covid19Map::PlotCountryTimeseries(FromDate="2020.2.1",
+           ToDate="2020.8.1",
+           Country="Iran",TypeP="New Death")
+```
