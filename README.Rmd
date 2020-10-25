@@ -53,7 +53,11 @@ library(lubridate)
 DataFrame<-GetFullTimeseries()
 ```
 
+```{r message=FALSE}
 
+Covid19Map::PlotWorldMap(DayP=20,MonthP=10,YearP=2020,TypeP="New Death")
+
+```
 
 
 ```{r pressure}
