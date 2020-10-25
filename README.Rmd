@@ -18,6 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![CRAN status](https://www.r-pkg.org/badges/version/Covid19Map)](https://CRAN.R-project.org/package=Covid19Map)
 [![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+[![Travis build status](https://travis-ci.com/user/repo.svg?branch=master)](https://travis-ci.com/user/repo)
 <!-- badges: end -->
 
 The goal of Covid19Map is to download the Covid-19 time-series from Johns Hopkins University Github page. There are three functions in this package that can be used for getting a clean data, plotting a World-map showing the number of cases and death in each day and a final figure that shows time-series for any individual country during a user defined interval.
