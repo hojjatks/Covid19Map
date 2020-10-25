@@ -72,7 +72,7 @@ library(lubridate)
 #>     date, intersect, setdiff, union
 DataFrame<-GetFullTimeseries()
 ```
-```{r message=FALSE}
+``` r 
 
 Covid19Map::PlotWorldMap(DayP=20,MonthP=10,YearP=2020,TypeP="New Death")
 
